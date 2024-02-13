@@ -112,12 +112,6 @@ The Situate project integrates Lidar-based crowd monitoring with AI technology t
 
 ### What does `Crowd Pulse` do?
 
-Crowd Pul
-
-#### How does it function?
-
-#### What techniques does it use
-
 #### What other varieties of the project are there? [IDEAS!]
 
 ### Design Choices

@@ -112,6 +112,42 @@ The Situate project integrates Lidar-based crowd monitoring with AI technology t
 
 ### What does `Crowd Pulse` do?
 
+Utilizing cutting-edge technologies such as Wi-Fi and IoT devices, the system captures real-time data to identify areas of high crowd density, thereby aiding in optimizing resource allocation and space utilization. Stakeholders can easily access this data through an intuitive interface via web or mobile applications, enabling them to make well-informed decisions. Despite the project's potential to enhance safety, security, and efficiency, it may encounter challenges such as privacy concerns regarding data collection and the initial investment required for hardware and software setup. Nonetheless, the system holds promise for streamlining campus management processes and fostering a safer, more efficient environment for both students and staff.
+
+The `Crowd Pulse` project aims to modernize the campus, by utilising WI-FI scanning techniques, to create a solution to monitoring crowd presence and density on the university campus. Utilising this would be beneficial to the university, Staff, students, and administration, below is the limitations of `Crowd Pulse` as a "user device" (i.e. it has no knowledge of the network structure)
+
+> [!warning] Limits of a crowd pulse as a `user device `
+> Due to the Limitations of a "user" device, not being able to see the network topology, crowd pulse is only able to detect "personal" devices for the entire network and not individual areas.
+
+`Crowd Pulse` if given the network structure, can identify "personal" devices in a much more refined way, it means that instead of just generating crowd density values for the entire campus, it can pinpoint Wireless Access points and use those to generate crowd density values, meaning that a much more localised crowd density value can be generated.
+
+##### Wide scanning technique
+
+###### Pros
+
+- Modernizes campus monitoring by leveraging advanced technology.
+- Offers a comprehensive solution for monitoring crowd presence and density.
+- Benefits various stakeholders including university staff, students, and administration.
+
+###### Cons
+
+- Limited by its status as a "user device," lacking knowledge of the network structure.
+- Can only detect "personal" devices for the entire network, not individual areas.
+
+##### Network Topology Access
+
+###### Pros
+
+- Enables a much more refined identification of "personal" devices.
+- Allows pinpointing of Wireless Access Points for generating crowd density values.
+- Provides a more localized crowd density value, enhancing accuracy and precision.
+
+###### Cons
+
+- Requires access to the network structure, potentially posing logistical challenges.
+- May necessitate additional resources and permissions for implementation.
+- Dependency on network structure for effectiveness, potentially limiting flexibility.
+
 #### What other varieties of the project are there? [IDEAS!]
 
 ### Design Choices

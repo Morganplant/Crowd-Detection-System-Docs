@@ -148,8 +148,6 @@ The `Crowd Pulse` project aims to modernize the campus, by utilising WI-FI scann
 - May necessitate additional resources and permissions for implementation.
 - Dependency on network structure for effectiveness, potentially limiting flexibility.
 
-#### What other varieties of the project are there? [IDEAS!]
-
 ### Design Choices
 
 #continue-later

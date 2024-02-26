@@ -18,33 +18,6 @@ The `Crowd Pulse` initiative aims to modernize campus operations by utilizing Wi
 
 With access to the network structure, `Crowd Pulse` can significantly enhance its capability to identify "personal" devices with greater precision. This means that instead of merely generating crowd density values for the entire campus, it can pinpoint Wireless Access Points for more localized crowd density values.
 
-##### Broad Scanning Technique
-
-###### Advantages
-
-- Revitalizes campus monitoring through cutting-edge technology.
-- Provides a comprehensive solution for monitoring crowd presence and density.
-- Benefits various stakeholders, including university staff, students, and administration.
-
-###### Disadvantages
-
-- Restricted by its status as a "user device," lacking insight into the network structure.
-- Capable of detecting only "personal" devices across the entire network, not specific areas.
-
-##### Access to Network Topology
-
-###### Advantages
-
-- Facilitates a more precise identification of "personal" devices.
-- Enables the pinpointing of Wireless Access Points to generate crowd density values.
-- Enhances accuracy and precision by providing localized crowd density values.
-
-###### Disadvantages
-
-- Requires access to the network structure, potentially posing logistical hurdles.
-- May necessitate additional resources and permissions for implementation.
-- Reliant on network structure for effectiveness, potentially limiting adaptability.
-
 ### Diagrams
 
 ### Prototypes

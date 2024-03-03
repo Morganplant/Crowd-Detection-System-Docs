@@ -318,7 +318,7 @@ erDiagram
 
 ```
 
-#### Data Flow Diagram
+#### Diagrams
 
 ##### Low Level Diagram
 

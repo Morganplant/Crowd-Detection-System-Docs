@@ -1,3 +1,8 @@
+---
+tags:
+  - Log
+---
+
 - Initially when I started the project I thought I would be able to use the network topology to designate areas, such as:
   - Computer-Lab-1 - AP
   - Arts A02 - AP

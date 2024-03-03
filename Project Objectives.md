@@ -1,3 +1,8 @@
+---
+tags:
+  - G5038-Individual-Project
+---
+
 > [!error] Assumptions
 >
 > - All of the people have at least 1 device connected to the local WIFI network (eduroam)

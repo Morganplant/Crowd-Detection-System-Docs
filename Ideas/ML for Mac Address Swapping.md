@@ -1,1 +1,5 @@
 It may be possible to circumvent the MAS (Mac Address Swap) problem, by using Machine Learning, it could be done by doing several scans at night when no one is around to discover the infrastructure, then we could remove those from the equation, however the ML would be more useful, to detect when a MAS has happened and identify that a swap occurred, for example if a device using a specific address disappears at the same time a new device joins, this could potentially be a MAS
+
+---
+
+Utilizing Machine Learning presents a promising avenue for addressing the MAS Problem most network scanning software encounters (Mac Address Swapping). A potentially viable strategy entails conducting multiple scans during off-peak hours to comprehensively map out the infrastructure. By meticulously filtering known devices, ML algorithms could hone in on outliers, specifically MAC address swaps, with greater precision. For instance, if a device suddenly disappears from the network while another device with a different MAC address emerges simultaneously, it could indicate a MAS event. Which could help in identifying "people"

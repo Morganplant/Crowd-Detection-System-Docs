@@ -1,11 +1,6 @@
 ### Explain the Problem:
 The problem at hand revolves around the efficient monitoring and analysis of crowd density and presence within university campuses. Currently, there exists no effective method to track the busiest locations on campus, which is crucial for events like protests, fairs, and ensuring safety during epidemics such as COVID-19. This lack of monitoring inhibits security measures and resource allocation, posing potential risks to individuals and hindering campus operations.
 
-
-
-
-
-
 ### Explain the Solution:
 The proposed solution is the development of a University Crowd Detection System named "Crowd Pulse." This system aims to utilize either Wi-Fi technology or IoT devices for collecting user data and presenting it in a comprehensible manner. Through data collection and analysis, Crowd Pulse will provide insights into crowd density across various campus locations. Additionally, it will feature a user-friendly interface, potentially a progressive web application, for visualizing this data on a campus map.
 

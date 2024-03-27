@@ -62,10 +62,13 @@ Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some c
 - Lack of network topology information
 - Limited crowd density precision, only able to provide overall density data
 - Real-time analysis may be challenging due to data processing requirements
+#### Discovery that mapping Topology as a "user device" is impossible
+
+#reference 
 
 In this approach I envisioned the system to instead of relying on dedicated IoT sensor devices, utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, **<mark style="background: #FFB86CA6;">most</mark>** people would be connected to the campus Wi-Fi, and thus could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
 
-However during the development of this System I encountered a limitation, the unknowability of network topology as a "user device", meaning that I would be unable to identify which devices where connected to which WAP. This was until I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. And So I continued with the approach.
+However during the development of this System I encountered a limitation, the unknowability of network topology as a "user device", meaning that I would be unable to identify which devices where connected to which WAP. This was until I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. And So I continued with the approach using an exported topology in adition to 
 
 
 ### Why was it difficult 

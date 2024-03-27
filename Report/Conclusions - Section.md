@@ -1,8 +1,10 @@
-### What Design Choices where made along the way
+### What is the Project 
+---
+### What Design Choices made along the way
 
 1. Initial Ideas of IoT or Wi-Fi
-2. Move to a Hybrid IoT Wi-Fi approach
-3. Move again to Only Wi-Fi approach
+2. Potential for a Hybrid IoT Wi-Fi approach
+3. Move to Only Wi-Fi approach
 4. Discovering that mapping Topology was not possible
 5. Moving to Hybrid Topology given and Scanning approach
 #### Initial Ideas of IoT and Wi-Fi
@@ -32,24 +34,48 @@ Despite its advantages, this approach also comes with its downsides:
 
 
 
-### ---
 
+#### Potential Hybrid IoT Wi-Fi approach
+Considering the limitations of both IoT and Wi-Fi approaches, I decided a hybrid approach might be better. This method combined the benefits of both technologies - IoT's ability to provide real-time data from specific areas and Wi-Fi's comprehensive coverage of the entire network. Under this approach, IoT  devices would have been deployed in critical areas such as a campus library, lunch areas, cafes, shops, etc., to monitor crowd density in those particular spaces. In contrast, Wi-Fi was used to estimate the overall crowd density across the campus network by scanning for connected devices.
 
+**Benefits of Hybrid Approach**:
+1. Improved Accuracy: Combining data from both IoT devices and Wi-Fi access points can result in a more precise determination of crowd density.
+2. Enhanced Flexibility: The hybrid approach would allow Crowd Pulse to adapt to various environments, as it could utilize available Wi-Fi networks when IoT devices are not an option.
+3. Scalability: The hybrid system could expand its reach by integrating with existing campus Wi-Fi infrastructure and adding IoT devices where necessary.
+
+**Downsides of Hybrid Approach**:
+1. Increased Complexity: Managing and coordinating data from multiple sources, both IoT devices and Wi-Fi access points, can add complexity to the system design and implementation.
+2. Cost: The hybrid approach would require a larger budget due to the additional cost of purchasing and deploying IoT devices alongside existing campus Wi-Fi infrastructure.
+3. Privacy Concerns: Utilizing both technologies could potentially increase privacy concerns as more data is being collected from various sources.
 
 ---
+#### Move to Only Wi-Fi approach
+Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some challenges related to the implementation, maintenance, and cost of IoT devices. The high cost, complex installation process, and intermittent connectivity issues made me reconsider the strategy. I decided to shift entirely to a Wi-Fi-based solution. 
 
----
+**Benefits**:
+- Utilizes existing Wi-Fi infrastructure
+- No need for additional hardware installation (sensors)
+- Reduced costs compared to IoT approach
+- Less complicated setup and implementation process
+
+**Downsides**:
+- Lack of network topology information
+- Limited crowd density precision, only able to provide overall density data
+- Real-time analysis may be challenging due to data processing requirements
+
+In this approach I envisioned the system to instead of relying on dedicated IoT sensor devices, utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, **<mark style="background: #FFB86CA6;">most</mark>** people would be connected to the campus Wi-Fi, and thus could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
+
+However during the development of this System I encountered a limitation, the unknowability of network topology as a "user device", meaning that I would be unable to identify which devices where connected to which WAP. This was until I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. And So I continued with the approach.
+
+
 ### Why was it difficult 
-
+##### How did you overcome these difficulties
 - The limitations where difficult to navigate
 	1. Unknowable topology
 	2. Network range class (for scanning)
 	3. Mac Address Rotation
 	4. Real-time Analysis
-
-### What was the cleverest part?
-???
-#continue-later 
+---
 ### What did you discover / learn
 
 - Unknowable topology

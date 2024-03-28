@@ -4,9 +4,6 @@
 During the testing phase of the project, I used a blend of real-world data, and simulated data, to test that the system was working correctly. In accordance with the laws and regulations mentioned earlier in this report, I only used the crowd pulse system on network's I had authorization to do so. 
 
 Initially I was using the system on relatively small networks, which did not simulate the environment that the system would be deployed in, i.e. large area networks, that have a much higher device count. So to fix this, I decided to use `Faker`. Faker is a Python module that allows you to quickly generate fake information, such as companies, names, and most importantly for this project, Network information. Using the faker module I was able to create large networks, that would simulate the environment that the crowd pulse system would be deployed in.
-
-
-
 ##### How was it tested?
 Initially the project was tested on small home networks, as that was what I had access to at the time. Due to the nature of the project, testing on small home networks was not the best way to test the project, as it was built for crowd monitoring, on larger scale networks. 
 

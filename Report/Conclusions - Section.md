@@ -6,7 +6,7 @@
 2. Potential for a Hybrid IoT Wi-Fi approach
 3. Move to Only Wi-Fi approach
 4. Discovering that mapping Topology was not possible
-5. Moving to Hybrid Topology given and Scanning approach
+5. Moving to Hybrid Topology and Scanning approach
 #### Initial Ideas of IoT and Wi-Fi
 At the onset of our project, I considered various approaches for monitoring crowd density on a campus network. The initial ideas revolved around two primary technologies - Internet of Things (IoT) and Wi-Fi. IoT referred to the use of connected devices such as sensors or beacons that could provide real-time data about device presence within their proximity. On the other hand, Wi-Fi offered a more comprehensive approach by either scanning the entire network for connected devices and estimating crowd density based on their numbers, or somehow utilising the existing network topology to "map" individual areas.
 
@@ -65,7 +65,7 @@ Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some c
 
 In this approach I envisioned the system utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, **<mark style="background: #FFB86CA6;">most</mark>** people would be connected to the campus Wi-Fi, and so could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
 #### Unknowable Topology
-The Discovery that discovering / mapping topology as a "user device" was impossible, posed a significant challenge. In response, I reconsidered the initial IoT device approach, as well as an approach that utilised an exported topology to remove this challenge entirely. I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. #insert-reference And So I continued with the approach using an exported topology and supplementing that data with a scanning system
+The Discovery that discovering / mapping topology as a "user device" was impossible, posed a significant challenge. In response, I reconsidered the initial IoT device approach, as well as an approach that utilised an exported topology to remove this challenge entirely. I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. #insert-reference And So I continued with the approach using an exported topology and supplementing that data with a scanning system.
 
 ### Why was it difficult 
 ##### How did you overcome these difficulties

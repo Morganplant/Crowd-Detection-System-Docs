@@ -66,6 +66,15 @@ Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some c
 In this approach I envisioned the system utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, **<mark style="background: #FFB86CA6;">most</mark>** people would be connected to the campus Wi-Fi, and so could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
 #### Unknowable Topology
 The Discovery that discovering / mapping topology as a "user device" was impossible, posed a significant challenge. In response, I reconsidered the initial IoT device approach, as well as an approach that utilised an exported topology to remove this challenge entirely. I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. #insert-reference And So I continued with the approach using an exported topology and supplementing that data with a scanning system.
+#### Hybrid Topology and Scanning Approach
+The Hybrid Topology and Scanning approach combines the usage of both network topology information, if available, and scanning techniques to generate crowd density and monitoring values. This method offers some benefits over the initially considered options. For instance, it provides more comprehensive data by utilizing both sources when possible. Additionally, it offers increased flexibility since it can function even when network topology information is not available. Furthermore, it may allow for real-time analysis of crowd density in specific areas, providing valuable insights to users.
+
+Benefits of Hybrid Topology and Scanning approach:
+
+- Comprehensive data collection (when topology is available)
+- Increased flexibility (can function without network topology)
+- Real-time analysis possible (in some cases)
+
 
 ### Why was it difficult 
 ##### How did you overcome these difficulties

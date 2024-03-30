@@ -1,12 +1,6 @@
 ### What is the Project 
----
-### What Design Choices made along the way
 
-1. Initial Ideas of IoT or Wi-Fi
-2. Potential for a Hybrid IoT Wi-Fi approach
-3. Move to Only Wi-Fi approach
-4. Discovering that mapping Topology was not possible
-5. Moving to Hybrid Topology and Scanning approach
+### What Design Choices made along the way
 #### Initial Ideas of IoT and Wi-Fi
 At the onset of our project, I considered various approaches for monitoring crowd density on a campus network. The initial ideas revolved around two primary technologies - Internet of Things (IoT) and Wi-Fi. IoT referred to the use of connected devices such as sensors or beacons that could provide real-time data about device presence within their proximity. On the other hand, Wi-Fi offered a more comprehensive approach by either scanning the entire network for connected devices and estimating crowd density based on their numbers, or somehow utilising the existing network topology to "map" individual areas.
 

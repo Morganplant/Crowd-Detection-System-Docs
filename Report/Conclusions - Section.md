@@ -1,4 +1,4 @@
-### What is the Project 
+# What is the Project 
 
 ### What Design Choices made along the way
 #### Initial Ideas of IoT and Wi-Fi

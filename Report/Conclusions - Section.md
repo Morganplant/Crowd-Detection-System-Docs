@@ -1,5 +1,7 @@
 # What is the Project 
 
+
+> [!warning] Move Design Choices into Design + Management
 ### What Design Choices made along the way
 #### Initial Ideas of IoT and Wi-Fi
 At the onset of our project, I considered various approaches for monitoring crowd density on a campus network. The initial ideas revolved around two primary technologies - Internet of Things (IoT) and Wi-Fi. IoT referred to the use of connected devices such as sensors or beacons that could provide real-time data about device presence within their proximity. On the other hand, Wi-Fi offered a more comprehensive approach by either scanning the entire network for connected devices and estimating crowd density based on their numbers, or somehow utilising the existing network topology to "map" individual areas.
@@ -25,10 +27,6 @@ Despite its advantages, this approach also comes with its downsides:
 
 1. **Limited accuracy and coverage**: Since crowd density data is collected based on the number of devices connected to a single access point, there may be inaccuracies or inconsistencies when it comes to crowd density measurements. Additionally, the Wi-Fi method may not provide detailed information about specific areas with high crowd density due to the larger coverage area of access points.
 2. **Limitations for real-time analysis**: Since Crowd Pulse using this approach relies on the Wi-Fi access points for data collection, it may not be able to perform real-time analysis as the IoT approach due to potential network latencies or limitations in processing power at the access points.
-
-
-
-
 #### Potential Hybrid IoT Wi-Fi approach
 Considering the limitations of both IoT and Wi-Fi approaches, I decided a hybrid approach might be better. This method combined the benefits of both technologies - IoT's ability to provide real-time data from specific areas and Wi-Fi's comprehensive coverage of the entire network. Under this approach, IoT  devices would have been deployed in critical areas such as a campus library, lunch areas, cafes, shops, etc., to monitor crowd density in those particular spaces. In contrast, Wi-Fi was used to estimate the overall crowd density across the campus network by scanning for connected devices.
 
@@ -57,7 +55,7 @@ Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some c
 - Limited crowd density precision, only able to provide overall density data
 - Real-time analysis may be challenging due to data processing requirements
 
-In this approach I envisioned the system utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, **<mark style="background: #FFB86CA6;">most</mark>** people would be connected to the campus Wi-Fi, and so could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
+In this approach I envisioned the system utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, most people would be connected to the campus Wi-Fi, and so could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
 #### Unknowable Topology
 The Discovery that discovering / mapping topology as a "user device" was impossible, posed a significant challenge. In response, I reconsidered the initial IoT device approach, as well as an approach that utilised an exported topology to remove this challenge entirely. I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology. #insert-reference And So I continued with the approach using an exported topology and supplementing that data with a scanning system.
 #### Hybrid Topology and Scanning Approach
@@ -70,6 +68,9 @@ Benefits of Hybrid Topology and Scanning approach:
 - Real-time analysis possible (in some cases)
 
 
+
+---
+#to-continue
 ### Why was it difficult 
 ##### How did you overcome these difficulties
 - The limitations where difficult to navigate
@@ -84,3 +85,4 @@ Benefits of Hybrid Topology and Scanning approach:
 - Unknowable topology
 - Rediscovering the different network range classes and why they are useful
 - 
+

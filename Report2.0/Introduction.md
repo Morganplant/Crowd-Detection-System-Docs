@@ -24,20 +24,6 @@ This Project was Guided by the Project Management Tools and workflows below, whi
 2. SMART targets #insert-reference 
 3. Agile and Waterfall Methodologies #insert-reference 
 4. Project Phases and Task Management
-
-> [!warning]- Move to Project Management Section
-> The Crowd Pulse Project was guided by utilizing SMART targets / goals, these allowed me to have a more streamlined development workflow, in this instance SMART [8] refers to a way of setting objectives that are:
-> 1. Specific
-> 2. Measurable
-> 3. Achievable
-> 4. Relevant
-> 5. Time-based
->
-> These SMART targets included:
-> - Achieve 70% accuracy rate in identifying crowd density in testing data.
-> - Identify and prioritize 3 high traffic areas within the test data.
-> - discover 4 low density areas, within the testing data.
-> - Identify and designate 3 campus zones with consistently high crowd density levels
 ### Motivations
 My reasoning for creating the Crowd Pulse project was threefold
 1. I wanted to test my abilities and Problem Solving Skills in a meaningful and challenging way.

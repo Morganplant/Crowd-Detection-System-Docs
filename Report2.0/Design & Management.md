@@ -64,6 +64,18 @@ During the initial Steps of the project it was important to establish a planned 
 #insert-img-reference 
 
 After moving to the agile development process, the workflow became easier to manage, it allowed me to work on developing Crowd Pulse, and create sub prototypes (a prototype of a specific section), which greatly improved my efficiency.
+
+The Crowd Pulse Project was guided by utilizing SMART targets / goals, these allowed me to have a more streamlined development workflow, in this instance SMART #insert-reference refers to a way of setting objectives that are:
+1. Specific
+2. Measurable
+3. Achievable
+4. Relevant
+5. Time-based
+These SMART targets included:
+- Achieve 70% accuracy rate in identifying crowd density in testing data.
+- Identify and prioritize 3 high traffic areas within the test data.
+- discover 4 low density areas, within the testing data.
+- Identify and designate 3 campus zones with consistently high crowd density levels
 ##### Project Phases
 As described above in the Gantt Chart of the initial project plan which I developed using Team Gantt #insert-reference a reliable Gantt chart creation tool, the process of creating Crowd Pulse was done in phases, these phases are shown in the Gantt Chart, as well as the agile methodology example but to go over them again they are:
 - **Ideas / Research Phase**

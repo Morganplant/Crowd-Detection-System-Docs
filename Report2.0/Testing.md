@@ -14,12 +14,3 @@ As stated before initially the project was tested on small home networks, that I
 I thought of a different way to test the project, without access to a large scale network due to potential privacy and security issues. Synthetic data, this would allow me to create much larger data that I could use to test the system.
 
 Using the Faker library allowed me to simulate various network environments realistically, This synthetic data generation approach provided a controlled yet expansive testing environment without compromising actual user data. By generating data representative of real-world network behaviours, I could assess the project's performance, scalability, and accuracy under conditions akin to its intended deployment. This comprehensive testing approach helped identify and rectify issues early in the development cycle, ensuring a more robust and reliable final product.
-
-
-
----
-
-###### What did you test it on
-As mentioned earlier the project underwent exhaustive testing across an extensive array of synthetic networks, meticulously crafted utilizing the sophisticated functionalities offered by the Faker library. These simulated environments spanned a broad spectrum of complexity, encompassing everything from modest home-based configurations to expansive networks mirroring the intricate infrastructure typically observed within university campuses or corporate enterprises.
-##### How did you get the data
-The data acquisition process began with an in-depth analysis of my personal home network, serving as the initial testing ground for the project. Subsequently, the methodology evolved towards the generation of intricate synthetic data sets crafted to accurately emulate real-world scenarios. This sophisticated approach involved meticulously fine-tuning data parameters to ensure a seamless integration Through these iterative steps, a comprehensive data framework was established, enabling exhaustive testing and refinement to drive the project's development forward.

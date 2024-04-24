@@ -1,23 +1,44 @@
-### How `Crowd Pulse` Works
+### How Crowd Pulse Works
 
-`Crowd Pulse` Works by first checking the permissions it has
+Crowd Pulse's Scanning Technique is built around a program named Nmap. Nmap (or Network Mapper) is a robust network auditing tool, that is used for network exploration and security auditing. It's functions by leveraging IP (internet Protocol) packets to identify hosts (devices on a network), then by analysing these packets it can provide information on these hosts #insert-reference, below are some examples of what kind of scans can be done:
+- **Host Discovery** - This shows basic information about hosts on a network.
+- **Port Scanning** - This shows information on the ports that different hosts have open.
+- **OS Detection** - This shows information on the ports scanned, and uses probabilities to determine what OS the host devices are using.
+By discovering devices, detecting OSes and scanning ports, we can identify which OS a device is likely to be using, which is useful in removing network architecture from our data.
+
+Crowd Pulse Relies on the following 3 Assumptions:
+
+> [!warning] Assumption 1 - All members of a crowd **will** have a discoverable device
+> This is because if a crowd member does not have a discoverable device, then it is impossible to log their presence in the crowd using Crowd Pulse.
+
+> [!warning] Assumption 2 - All members of a crowd will have their device connected to the local Wi-Fi
+> This is a "safe" assumption because the Local Wi-Fi enables the Staff and Students to utilize university resources, such as Computer and Study Space booking, etc.
+
+> [!warning] Assumption 3 - Members of a crowd will have only 1 device connected to the local Wi-Fi at a time
+> This is due to the fact that there would be simply too many devices to sort through which, would inflate the crowd density artificially.
+
+Crowd Pulse was designed with these assumptions in place, to allow me to develop a much simpler system than otherwise required. Without these assumptions It would require more work, to determine an accurate crowd density value for areas, where there are likely to be more devices per person, for example a lecture theatre in use.
+
+---
+
+Crowd Pulse Works by first checking the permissions it has
 > [!warning] Go back and Cover how you export the network topology
 
 > [!error] Potentially **Inconsistent** With other sections - #continue-later
 
-- If `Crowd Pulse` has access to the network topology then it is able to identify the areas with the highest crowd density values, this can then be applied to an interface in which a user would more easily understand this data.
-- If `Crowd Pulse` does not have the network topology then it can only generate the crowd density for the entire area (Wi-Fi network) which significantly limits it's functionality.
+- If Crowd Pulse has access to the network topology then it is able to identify the areas with the highest crowd density values, this can then be applied to an interface in which a user would more easily understand this data.
+- If Crowd Pulse does not have the network topology then it can only generate the crowd density for the entire area (Wi-Fi network) which significantly limits it's functionality.
 
-The system captures data to pinpoint areas with high crowd density, facilitating optimal resource allocation and space management, on the administration side. As well as creating informed users, an example of this would be a student looking for a place to eat on campus, they would then check the `Crowd Pulse` System which provides the user with the crowd density information, allowing them to make an informed decision.
+The system captures data to pinpoint areas with high crowd density, facilitating optimal resource allocation and space management, on the administration side. As well as creating informed users, an example of this would be a student looking for a place to eat on campus, they would then check the Crowd Pulse System which provides the user with the crowd density information, allowing them to make an informed decision.
 
 > [!section]
 
-The `Crowd Pulse` initiative aims to modernize campus operations by utilizing Wi-Fi scanning techniques to develop a solution for monitoring crowd presence and density. This implementation stands to benefit the university, staff, students, and administration. Below are the limitations of `Crowd Pulse` as a "user device" (i.e., lacking knowledge of the network structure).
+The Crowd Pulse initiative aims to modernize campus operations by utilizing Wi-Fi scanning techniques to develop a solution for monitoring crowd presence and density. This implementation stands to benefit the university, staff, students, and administration. Below are the limitations of Crowd Pulse as a "user device" (i.e., lacking knowledge of the network structure).
 
-> [!warning] Constraints of `Crowd Pulse` as a "User Device"
-> Given its limitations as a "user" device unable to perceive the network topology, `Crowd Pulse` can only detect "personal" devices across the entire network, not individual areas.
+> [!warning] Constraints of Crowd Pulse as a "User Device"
+> Given its limitations as a "user" device unable to perceive the network topology, Crowd Pulse can only detect "personal" devices across the entire network, not individual areas.
 
-With access to the network structure, `Crowd Pulse` can significantly enhance its capability to identify "personal" devices with greater precision. This means that instead of merely generating crowd density values for the entire campus, it can pinpoint Wireless Access Points for more localized crowd density values.
+With access to the network structure, Crowd Pulse can significantly enhance its capability to identify "personal" devices with greater precision. This means that instead of merely generating crowd density values for the entire campus, it can pinpoint Wireless Access Points for more localized crowd density values.
 
 > [!example]- Example Interface - With Access to Topology
 >
@@ -50,7 +71,3 @@ Utilizing Machine Learning presents a promising avenue for addressing the MAS Pr
 #### Time Scanning
 
 During the quieter hours of the night, we would conduct periodic network scans to establish a foundational baseline of the networking devices present. These scans encompass a comprehensive range of network components, including switches, routers, and access points, etc. Providing a detailed overview of our networking infrastructure. These initial scans serve as a foundational reference point for subsequent scans aimed at crowd detection. By identifying and cataloguing the devices present during these off-peak scans, I can effectively filter out known entities from our crowd detection algorithms, thereby augmenting the accuracy and reliability of our monitoring systems.
-
-### What did happen vs what could have
-
-#continue-later

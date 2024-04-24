@@ -1,7 +1,7 @@
 ## Introduction
 This project revolves around the concept, execution, and evaluation of a crowd density and presence detection system. Utilizing Wi-Fi technology the system aims to determine areas of high crowd density, providing users with information for making informed decision making. The name of this project is "Crowd Pulse".
 
-Users will interact with the system in a way designed to be usable by anyone, This interface will be in the form of a web interface, allowing users, to locate the high density areas, to make informed decisions.
+Users will interact with the system in a way designed to be usable by anyone, this interface will be in the form of a web interface, allowing users, to locate the high density areas, to make informed decisions.
 
 The Crowd Pulse System was designed to facilitate 3 major use cases:
 1. Show Students where the busy areas on a university campus are.
@@ -14,16 +14,17 @@ Crowd Pulse works using two methods:
 1. **Network Topology** - When given the Wi-Fi network Topology, Crowd Pulse will identify the areas, that are the busiest.
 2. **Scanning** - Crowd Pulse can utilise network scanning techniques, to identify, the crowd density of the network as a whole, as well as identify network infrastructure devices, to avoid confusion.
 
-> [!quote] Objective - Reference This in the Conclusion
+> [!quote] Objective
 The Overall goal of this project is to create a modern and efficient solution for monitoring crowd presence and density in a university campus setting.
 
-Crowd Pulse offers the capability to monitor and analyse historical crowd density data for different locations, allowing users, to identify areas that are busy at certain times of day. This is done by utilising the existing Wi-Fi architecture, Other alternative discovery methods where considered the benefits and drawbacks of which are talked about later in this report.
+Crowd Pulse offers the capability to monitor and analyse historical crowd density data for different locations, allowing users, to identify areas that are busy at certain times of day. This is done by utilising the existing Wi-Fi infrastructure, Other alternative discovery methods where considered, the benefits and drawbacks of which are talked about later in this report.
 
-This Project was Guided by the Project Management Tools and workflows below, which are talked about in more detail later in this report:
-1. GitHub Project's #insert-reference 
-2. SMART targets #insert-reference 
-3. Agile and Waterfall Methodologies #insert-reference 
-4. Project Phases and Task Management
+This Project was Guided by the Project Management Tools and workflows below, which are talked about in more detail in the design and management section of this report:
+1. GitHub Project's [1]
+2. SMART targets [2]
+3. Weekly Project Log
+4. Agile and Waterfall Methodologies [3][4]
+5. Project Phases and Task Management
 ### Motivations
 My reasoning for creating the Crowd Pulse project was threefold
 1. I wanted to test my abilities and Problem Solving Skills in a meaningful and challenging way.
@@ -46,8 +47,8 @@ During the Project I decided that I would not use live public data, and would ge
 During the Project I learnt more about networking, how to manage a project, and effeciently manage my time.
 - I discovered that network topology was unknowable as a "user device"
 - I discovered that an easier way to implement this would be to change the specific network architecture to divide areas into different subnets, for example, the library building is on subnet 3 and the student union building is on subnet 4.
-- I discovered that the process of MAC Address Swapping has changed in recent years #insert-reference 
-- I realised that Scanning a network using a large network range class, requires more time or should be parallelized #insert-reference 
+- I discovered that the process of MAC Address Swapping has changed in recent years [5]
+- I realised that Scanning a network using a large network range class, requires more time or should be parallelized [6]
 ### Professional Considerations
 Throughout the development and future deployment of a System such as Crowd Pulse, it is and was essential to uphold professional standards, best practices and ensuring the quality and reliability of the Crowd Pulse System.
 ### Project Scope

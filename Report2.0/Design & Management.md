@@ -71,8 +71,8 @@ The Crowd Pulse Project was guided by utilizing SMART targets / goals, these all
 3. Achievable
 4. Relevant
 5. Time-based
-These SMART targets included:
-- Achieve 70% accuracy rate in identifying crowd density in testing data.
+Some of these SMART targets included:
+- Achieve 60% accuracy rate in identifying crowd density in testing data using scanning techniques.
 - Identify and prioritize 3 high traffic areas within the test data.
 - discover 4 low density areas, within the testing data.
 - Identify and designate 3 campus zones with consistently high crowd density levels

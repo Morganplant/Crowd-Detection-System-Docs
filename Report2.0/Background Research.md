@@ -93,14 +93,7 @@ The Situate project integrates Lidar-based crowd monitoring with AI technology t
 ### What does Crowd Pulse do?
 Crowd Pulse utilizes the pre-existing Wi-Fi network to get the crowd density of particular areas, this is stored, so that users can see the historical data for locations around an area such as a university campus, to help with campus security, day to day scheduling, as well as space and resource allocation.
 
----
-
-
 The Crowd Pulse project aims to modernize the campus, by utilising WI-FI crowd detection, to create a solution to monitoring crowd presence and density on the university campus. Utilising this would be beneficial to the university, Staff, students, and administration.
-
-Crowd Pulse Has Limitations, however without an exported network topology the system is heavily handicapped, and is only capable of producing crowd density information for the entire network and not specified locations. This is due to how a network topology talked about later in the limitations section of this report.
-
-Crowd Pulse if given the network structure, can identify "personal" devices in a much more refined way, meaning that instead of just generating a single crowd density for an entire campus, it can pinpoint Wireless Access points and use those to generate crowd density values, meaning that a much more localised crowd density value can be generated and used for analysis and historical data tracking.
 ##### Wide scanning technique
 ###### Pros
 

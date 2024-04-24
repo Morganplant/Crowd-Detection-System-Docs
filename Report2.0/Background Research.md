@@ -91,25 +91,14 @@ The Situate project integrates Lidar-based crowd monitoring with AI technology t
 4. **Potential resistance or scepticism** - Some passengers or stakeholders may express resistance or scepticism towards the deployment of advanced surveillance technologies like Situate, citing concerns over surveillance culture or distrust in AI-based systems.
 
 ### What does Crowd Pulse do?
-
----
-The Situate project integrates Lidar-based crowd monitoring with AI technology to enhance safety and improve the passenger experience at Bristol Temple Meads train station. Using Lidar sensors, Situate tracks real-time potentially hazardous activities like individuals near platform edges, alerting operators swiftly. With wide coverage from a single sensor, it ensures comprehensive monitoring [12].
-
----
-
-Crowd Pulse utilizes the pre-existing Wi-Fi network to get the crowd density of particular areas, this is stored, so that users can see the historical data of 
-
-
-
+Crowd Pulse utilizes the pre-existing Wi-Fi network to get the crowd density of particular areas, this is stored, so that users can see the historical data for locations around an area such as a university campus, to help with campus security, day to day scheduling, as well as space and resource allocation.
 
 ---
 
-
-Crowd Pulse uses the existing Wi-Fi infrastructure to capture data on high density locations, to help with campus security, day to day scheduling, as well as space and resource allocation. Despite the project's potential to enhance safety, security and efficiency, I encountered challenges such as, the privacy concerns of a system that monitors people, nonetheless the system holds promise for streamlining campus management processes and fostering a safer environment for students and staff.
 
 The Crowd Pulse project aims to modernize the campus, by utilising WI-FI crowd detection, to create a solution to monitoring crowd presence and density on the university campus. Utilising this would be beneficial to the university, Staff, students, and administration.
 
-Crowd Pulse Has Limitations, however without an exported network topology the system is heavily handicapped, and is only able to produce crowd density information for the entire network and not specific locations. This is due to how a network topology is unknowable and cannot be discovered by a "user device" (in this case a user device is a device connected to a network but does not have access to the network topology examples include; phones, laptops, Personal Computers, etc.)
+Crowd Pulse Has Limitations, however without an exported network topology the system is heavily handicapped, and is only capable of producing crowd density information for the entire network and not specified locations. This is due to how a network topology talked about later in the limitations section of this report.
 
 Crowd Pulse if given the network structure, can identify "personal" devices in a much more refined way, meaning that instead of just generating a single crowd density for an entire campus, it can pinpoint Wireless Access points and use those to generate crowd density values, meaning that a much more localised crowd density value can be generated and used for analysis and historical data tracking.
 ##### Wide scanning technique

@@ -1,6 +1,7 @@
 ### How `Crowd Pulse` Works
 
 `Crowd Pulse` Works by first checking the permissions it has
+> [!warning] Go back and Cover how you export the network topology
 
 > [!error] Potentially **Inconsistent** With other sections - #continue-later
 

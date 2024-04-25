@@ -30,9 +30,7 @@ The primary objectives:
 1. develop a system for detecting using Wi-Fi or IoT
 2. Real-Time Data analysis
 3. Integration with existing university infrastructure
-4. User Interface 
-
-> [!warning] Finish the UI!
+4. User Interface
 
 The Current System, fulfils the first objective as the project utilizes the existing infrastructure.
 

@@ -326,3 +326,289 @@ Given the nature of the system I wanted to ensure that the data being stored and
 1. **Data Minimization**: Crowd Pulse will limit the collection of personal data to only what is necessary for the system's functionality, ensuring that the least amount of identifiable information is gathered. This aligns with privacy principles and reduces the risk associated with unnecessary data storage.
 2. **Encryption and Anonymization**: Any data that is collected will be encrypted and anonymized to prevent unauthorized access and to ensure that individual identities cannot be discerned from the stored information.
 3. **Compliance with Data Protection Regulations**: Crowd Pulse will adhere to all relevant data protection regulations, ensuring that the handling and storage of user data complies with legal requirements to safeguard user privacy and security.
+## Design and Project Management
+### Diagrams
+> [!abstract]- User Flow Diagram
+>![[Pasted image 20240405132323.png]]
+
+> [!abstract]- Entity Relationship Diagram
+> ![[Pasted image 20240405132406.png]]
+
+> [!example]- Example Network Topology map
+> ![[Pasted image 20240405132952.png]]
+> ![[Pasted image 20240425021551.png]]
+
+### How the Project is managed
+I used a multitude of different ways to manage my project. For source control and backups, I used GitHub [1], my oracle cloud instance [17], and Google Drive [18]. Using GitHub allowed me to utilize GitHub issues and projects, which allowed me to track tasks easily, an example of which was the Kanban board below. I used my Google Drive as well as my own server to store backups periodically to avoid backup loss if something were to happen to GitHub. This way, I had a higher degree of redundancy baked into the project.
+#### Kanban
+![[Pasted image 20240405140730.png]]
+
+#### Requirements Analysis
+In the Following Section I will go through some of the functional and non-functional requirements, I though where important to Crowd Pulse during development. I will cover which requirements I viewed as mandatory, which I viewed as Desirable, and reasoning for not completing some of them.
+##### Functional Requirements
+###### Device Detection
+1. The System must employ a method that relies on IoT Devices or Wi-Fi Functionality
+2. It should be capable of monitoring the crowd density in multiple sub areas, or producing crowd density data for an entire area
+###### Real-Time Data Collection & Analysis
+- Implementing real-time data collection and analysis to provide immediate insights into crowd density, would be a great bonus to the project, but near real-time data would suffice
+- Ideally the system should be responsive and provide timely information
+###### Integration with Existing Infrastructure
+- Seamless integration with the university's existing systems would be extremely useful in providing easy access to the users
+- Compatibility with current systems would allow for a more efficient solution
+###### User Experience & User Interface (UX and UI)
+- Designing and developing a user-friendly interface (web app) for visualising the data would enhance the experience of the users greatly
+###### Scalability and Historical Data
+- The system must be easily expandable to cover multiple sub areas
+- The System should store some historical data of some kind to draw from to do trend analysis
+- The system should enable users to access historical insights
+##### Non-Functional Requirements
+###### Privacy and Security
+- The system must adhere to the privacy principles set out by the university and the BCS, collecting and only aggregating anonymized data
+###### Usability
+- The user interface should have a design that is easy to understand and navigate
+- Features should be logically organized for convenience
+- Providing customizable views and filter options to cater to different user preferences
+- Ensure that the interface is accessible to users with diverse needs
+- Implementing a feedback mechanism for users to report issues or provide suggestions
+#### Planning
+##### Initial Proposal and Requirements Analysis
+Crowd Pulse began with the creation of a comprehensive project proposal. This proposal outlined the project's objectives, scope, and deliverables. Following this, an analysis of requirements was done to identify the specific areas for successful completion. This initial phase laid the groundwork for the project's planning and execution.
+##### Development of Project Plan
+With a clear understanding of the project's goals, I developed a plan. This plan detailed the tasks, timelines and milestones, giving me a roadmap for the project's progression, though this was not always accurate, the initial project planning was outlined by the Gantt chart below:
+![[Pasted image 20231123123439.png]]
+##### Execution and Monitoring
+Throughout the project, I followed the established project plan and when I encountered Limitations and unforeseen setbacks, changed the plan, timelines and milestones. I decided to have regular self-assigned checkpoints, where I would evaluate my progress and decide what was best for the project, these checkpoints often included talks with my academic advisor, but not always, as shown in the <mark style="background: #FF5582A6;">Project Log section in the appendences.</mark> This proactive approach ensured that the project remained on track toward successful completion, equipping me with valuable practical skills in project management.
+
+> [!warning] Remove Highlighting
+#### Kanban
+![[Pasted image 20240405140730.png]]
+#### Project Plan
+During the initial Steps of the project it was important to establish a planned methodology. As I have worked with different methodologies before, namely agile, waterfall and scrum [3] initially I decided I would use a waterfall method, as described by the Gantt Chart shown previously, after the waterfall methodology did not work as well as I had hoped due to setbacks, I chose to implement the Agile methodology as shown by the diagram below:
+![[Pasted image 20240405141209.png]]
+[3]
+
+After moving to the agile development process, the workflow became easier to manage, it allowed me to work on developing Crowd Pulse, and create sub prototypes (a prototype of a specific section), which greatly improved my efficiency.
+
+The Crowd Pulse Project was guided by utilizing SMART targets / goals, these allowed me to have a more streamlined development workflow, in this instance SMART [2] refers to a way of setting objectives that are:
+1. Specific
+2. Measurable
+3. Achievable
+4. Relevant
+5. Time-based
+Some of these SMART targets included:
+- Achieve 60% accuracy rate in identifying crowd density in testing data using scanning techniques.
+- Identify and prioritize 3 high traffic areas within the test data.
+- discover 4 low density areas, within the testing data.
+- Identify and designate 3 campus zones with consistently high crowd density levels
+##### Project Phases
+As described above in the Gantt Chart of the initial project plan which I developed using Team Gantt [19] a reliable Gantt chart creation tool, the process of creating Crowd Pulse was done in phases, these phases are shown in the Gantt Chart, as well as the agile methodology example but to go over them again they are:
+- **Ideas / Research Phase**
+	- In this phase I was focused on generating ideas, backed by research, and developing those ideas rather than creating anything, this also held the start of the project planning.
+- **Design Phase**
+	- During This phase I was focused on furthering the ideas that held the most substance, and started to create diagrams of how these ideas would function and create the flow of the system. this is where the bulk of the planning, designing prototypes and diagrams happened.
+- **Implementation / Coding**
+	- During this Phase I started coding the prototype ideas, and picking which systems to use, using the agile methodology here has beneficial as it allowed me to refine my prototypes, and allowed my designs to become better.
+- **Testing**
+	- In this phase I tested the system, I was guided by my academic advisor as well as, my own targets, to avoid testing in a live environment, but create synthetic data that would simulate way a live environment would behave
+- **Deployment**
+	- This was a mostly theoretical project stage as I decided before that deployment into a live environment would pose security and privacy concerns already mentioned.
+##### Source Control - GitHub & GiTea
+I used GitHub, as well as my own self hosted version GiTea, on a VPS (Virtual Private Server on my oracle instance) on my cloud instance. GiTea, is a selfhosted alternative of GitHub, the primary goal of GiTea is to make an easy, fast, painless self hosted git service, and as GiTea is written in Go it works across all the platforms and architectures that are supported by Go[20]. For this project I will only be using GiTea as an extra level of protection or redundancy, This is so that I will always have some form of the project available to me that is under source control, allowing me to have a backup of the project available even if GitHub where to go down or corrupt in some way.
+###### Project / Issue Management
+GitHub has a feature called projects, these are things that can be synced to a repo to allow you to manage it's issues and track your progress I will be used it for this exact purpose, in The Planning Section I showed an image of the Kanban View of this tool.
+
+## Implementation
+### How Crowd Pulse Works
+
+Crowd Pulse's Scanning Technique is built around a program named Nmap. Nmap (or Network Mapper) is a robust network auditing tool, that is used for network exploration and security auditing. It's functions by leveraging IP (internet Protocol) packets to identify hosts (devices on a network), then by analysing these packets it can provide information on these hosts [21], below are some examples of what kind of scans can be done:
+- **Host Discovery** - This shows basic information about hosts on a network.
+- **Port Scanning** - This shows information on the ports that different hosts have open.
+- **OS Detection** - This shows information on the ports scanned, and uses probabilities to determine what OS the host devices are using.
+By discovering devices, detecting OSes and scanning ports, we can identify which OS a device is likely to be using, which is useful in removing network architecture from our data.
+
+Crowd Pulse Relies on the following 3 Assumptions:
+
+> [!warning] Assumption 1 - All members of a crowd **will** have a discoverable device
+> This is because if a crowd member does not have a discoverable device, then it is impossible to log their presence in the crowd using Crowd Pulse.
+
+> [!warning] Assumption 2 - All members of a crowd will have their device connected to the local Wi-Fi
+> This is a "safe" assumption because the Local Wi-Fi enables the Staff and Students to utilize university resources, such as Computer and Study Space booking, etc.
+
+> [!warning] Assumption 3 - Members of a crowd will have only 1 device connected to the local Wi-Fi at a time
+> This is due to the fact that there would be simply too many devices to sort through which, would inflate the crowd density artificially.
+
+Crowd Pulse was designed with these assumptions in place, to allow me to develop a much simpler system than otherwise required. Without these assumptions It would require more work, to determine an accurate crowd density value for areas, where there are likely to be more devices per person, for example a lecture theatre in use.
+
+Crowd Pulse Works by first checking the permissions it has
+- If Crowd Pulse has access to the network topology then it is able to identify the areas with the highest crowd density values, this can then be applied to an interface in which a user would more easily understand this data.
+- If Crowd Pulse does not have the network topology then it can only generate the crowd density for the entire area (Wi-Fi network) which significantly limits it's functionality.
+The system captures data to pinpoint areas with high crowd density, facilitating optimal resource allocation and space management, on the administration side. As well as creating informed users, an example of this would be a student looking for a place to eat on campus, they would then check the Crowd Pulse System which provides the user with the crowd density information, allowing them to make an informed decision.
+
+With access to the network structure, Crowd Pulse can significantly enhance its capability to identify "personal" devices with greater precision. This means that instead of merely generating crowd density values for the entire campus, it can pinpoint Wireless Access Points for more localized crowd density values.
+
+> [!example]- Initial Design for User Interface
+>
+> > [!quote]- With Access to Network Topology
+> > ![[Pasted image 20231123125302.png]]
+>
+> > [!quote]- Without Access to Network Topology
+> > ![[Pasted image 20240228092302.png]]
+
+### The Development Journey
+
+#### Initial Ideas of IoT and Wi-Fi
+At the onset of our project, I considered various approaches for monitoring crowd density on a campus network. The initial ideas revolved around two primary technologies - Internet of Things (IoT) and Wi-Fi. IoT referred to the use of connected devices such as sensors or beacons that could provide real-time data about device presence within their proximity. On the other hand, Wi-Fi offered a more comprehensive approach by either scanning the entire network for connected devices and estimating crowd density based on their numbers, or somehow utilising the existing network topology to "map" individual areas.
+
+The rationale behind IoT was to set up a network of sensors or beacons across the campus that could detect the presence of devices within their range. By deploying these devices in strategic locations, I aimed to estimate the crowd density of different areas on the campus. However, this approach required significant investment in hardware and infrastructure. Moreover, there were many variables to consider: related to device placement, battery life, and ensuring network connectivity for the IoT devices.
+##### IoT Approach:
+The Internet of Things (IoT) approach for Crowd Pulse would have involved deploying a network of connected sensors throughout the target area (campus). These sensors would be responsible for detecting and reporting the presence of devices within their range. The benefits of this approach include:
+
+1. **Fine-grained data collection**: IoT sensors can provide more accurate and detailed information about crowd density, as they are placed in specific locations and cover smaller areas.
+2. **Real-time analysis**: With the IoT network, Crowd Pulse can perform real-time analysis of crowd density data, allowing for immediate action to be taken when necessary.
+
+However, there are also downsides to this approach. Such as:
+
+1. **Cost and infrastructure**: Setting up an IoT network requires significant investment in both hardware and maintenance costs. It also necessitates the installation of a robust communication infrastructure to enable seamless secure data transfer between sensors and a central server.
+2. **Complexity**: Managing and maintaining a large number of sensors can be challenging, especially when it comes to updating firmware, troubleshooting issues, and ensuring their security.
+##### Wi-Fi Approach:
+The Wi-Fi approach for Crowd Pulse would have involved utilizing the Wi-Fi access points already present on campus to collect data on crowd density. This method does not require additional hardware beyond what is already installed. The benefits of this approach include:
+
+1. **Reduced cost and infrastructure**: Since no additional hardware is required, there are no significant upfront costs or ongoing maintenance expenses for Crowd Pulse using the Wi-Fi approach.
+2. **Widely available**: Wi-Fi networks are common in educational institutions, making it an easily deployable solution.
+
+Despite its advantages, this approach also comes with its downsides:
+
+1. **Limited accuracy and coverage**: Since crowd density data is collected based on the number of devices connected to a single access point, there may be inaccuracies or inconsistencies when it comes to crowd density measurements. Additionally, the Wi-Fi method may not provide detailed information about specific areas with high crowd density due to the larger coverage area of access points.
+2. **Limitations for real-time analysis**: Since Crowd Pulse using this approach relies on the Wi-Fi access points for data collection, it may not be able to perform real-time analysis as the IoT approach due to potential network latencies or limitations in processing power at the access points.
+#### Potential Hybrid IoT Wi-Fi approach
+Considering the limitations of both IoT and Wi-Fi approaches, I decided a hybrid approach might be better. This method combined the benefits of both technologies - IoT's ability to provide real-time data from specific areas and Wi-Fi's comprehensive coverage of the entire network. Under this approach, IoT  devices would have been deployed in critical areas such as a campus library, lunch areas, cafes, shops, etc., to monitor crowd density in those particular spaces. In contrast, Wi-Fi was used to estimate the overall crowd density across the campus network by scanning for connected devices.
+
+**Benefits of Hybrid Approach**:
+1. Improved Accuracy: Combining data from both IoT devices and Wi-Fi access points can result in a more precise determination of crowd density.
+2. Enhanced Flexibility: The hybrid approach would allow Crowd Pulse to adapt to various environments, as it could utilize available Wi-Fi networks when IoT devices are not an option.
+3. Scalability: The hybrid system could expand its reach by integrating with existing campus Wi-Fi infrastructure and adding IoT devices where necessary.
+
+**Downsides of Hybrid Approach**:
+1. Increased Complexity: Managing and coordinating data from multiple sources, both IoT devices and Wi-Fi access points, can add complexity to the system design and implementation.
+2. Cost: The hybrid approach would require a larger budget due to the additional cost of purchasing and deploying IoT devices alongside existing campus Wi-Fi infrastructure.
+3. Privacy Concerns: Utilizing both technologies could potentially increase privacy concerns as more data is being collected from various sources.
+#### Move to Only Wi-Fi approach
+Despite the potential success of the hybrid IoT Wi-Fi approach, I foresaw some challenges related to the implementation, maintenance, and cost of IoT devices. The high cost, complex installation process, and intermittent connectivity issues made me reconsider the strategy. I decided to shift entirely to a Wi-Fi-based solution. 
+**Benefits**:
+- Utilizes existing Wi-Fi infrastructure
+- No need for additional hardware installation (sensors)
+- Reduced costs compared to IoT approach
+- Less complicated setup and implementation process
+**Downsides**:
+- Lack of network topology information
+- Limited crowd density precision, only able to provide overall density data
+- Real-time analysis may be challenging due to data processing requirements
+
+In this approach I envisioned the system utilise the existing Wi-Fi infrastructure to map out the devices connected to the Wi-Fi, due to the nature of a campus location, most people would be connected to the campus Wi-Fi, and so could be crowd data can be gathered. I initially wanted the system to scan the network, discover the topology of the network and then utilising that topology, generate crowd density data for each individual Wireless Access Point (WAP) on the network for each WAP I would be able to generate the crowd density, correlate that to the real-world location and display that information to users. 
+#### Unknowable Topology
+The Discovery that discovering / mapping topology as a "user device" was impossible, posed a significant challenge. In response, I reconsidered the initial IoT device approach, as well as an approach that utilised an exported topology to remove this challenge entirely. I noted that routers and other "management devices" had the network topology, I learned in some cases you can export the network topology [22]. And So I continued with the approach using an exported topology and supplementing that data with a scanning system.
+#### Hybrid Topology and Scanning Approach
+The Hybrid Topology and Scanning approach combines the usage of both network topology information, if available, and scanning techniques to generate crowd density and monitoring values. This method offers some benefits over the initially considered options. For instance, it provides more comprehensive data by utilizing both sources when possible. Additionally, it offers increased flexibility since it can function even when network topology information is not available. Furthermore, it may allow for real-time analysis of crowd density in specific areas, providing valuable insights to users.
+
+Benefits of Hybrid Topology and Scanning approach:
+- Comprehensive data collection (when topology is available)
+- Increased flexibility (can function without network topology)
+- Real-time analysis possible (in some cases)
+### Project Extensions / Different Methods
+
+In this section I'll go over some of the different methods that were considered for the implementation of the project.
+#### Computer Vision
+Using computer vision is an option, that could be explored by using some code to monitor the people who are entering and exiting buildings it would give a good indication on how many people are inside the building. This has the drawback of not being able to monitor people who are outside of areas with cameras, and so would be very difficult to get an accurate measurement for the crowd density.
+
+This would also require some form of Machine Learning to identify people within a crowd and be able to distinguish the different people it comes across, similar to a facial recognition system which raises security concerns.
+#### Subnet Sectioning
+Implementing subnet sectioning for different areas of the campus within the Wi-Fi network infrastructure could significantly enhance the efficacy of crowd detection systems like Crowd Pulse. By allocating specific subnet addresses to distinct zones, devices connecting to wireless access points would automatically be assigned to their corresponding subnet based on their location. This approach streamlines the scanning process, enabling the system to pinpoint user devices more accurately and thereby provide more precise readings for crowd density in each designated area. Such precise localization of user devices within the network can greatly improve the effectiveness of crowd monitoring and management efforts on campus. Additionally, this method enhances crowd management, event safety, and infrastructure monitoring, ensuring comprehensive coverage and efficient resource allocation. This also means that Crowd Pulse would not require network topology privileges to work effectively.
+#### Mac Address Swap Tracking using ML
+Utilizing Machine Learning presents a promising avenue for addressing the MAS Problem most network scanning software encounters (Mac Address Swapping). A potentially viable strategy entails conducting multiple scans during off-peak hours to comprehensively map out the infrastructure. By meticulously filtering known devices, ML algorithms could hone in on outliers, specifically MAC address swaps, with greater precision. For instance, if a device suddenly disappears from the network while another device with a different MAC address emerges simultaneously, it could indicate a MAS event. Which could help in identifying "people"
+#### Time Scanning
+During the quieter hours of the night, we would conduct periodic network scans to establish a foundational baseline of the networking devices present. These scans encompass a comprehensive range of network components, including switches, routers, and access points, etc. Providing a detailed overview of our networking infrastructure. These initial scans serve as a foundational reference point for subsequent scans aimed at crowd detection. By identifying and cataloguing the devices present during these off-peak scans, I can effectively filter out known entities from our crowd detection algorithms, thereby augmenting the accuracy and reliability of our monitoring systems.
+## Project Limitations
+In the development phase of my project, I encountered several limitations that posed potential challenges to its functionality and effectiveness. These obstacles ranged from technical constraints like unpredictable network topologies to practical concerns such as overlapping IP addresses and vendor MAC rotations.
+### Unknowable topology
+One notable limitation was the unpredictable topology of the network, which complicated the accurate monitoring and management of network classes and devices. To address this issue, I implemented two methods, the first a dynamic discovery mechanism. This mechanism scans the network for new devices, ensuring updates to the database. The Second Method was allowing a user to supply the program with the network topology, allowing for enhanced functionality.
+### Network range class
+Another significant obstacle I faced involved the network range classes, which occasionally led to overlapping IP addresses and difficulties in device identification. To mitigate this challenge, I opted for CIDR notation. This allowed me to precisely define the IP address range for each network class, facilitating clear differentiation and accurate device tracking.
+### Mac Address Rotation
+Additionally, I grappled with the challenge posed by vendor MAC rotations, which jeopardized device identification due to the constant shuffling of MAC addresses. While considering potential solutions, I meticulously weighed the costs and benefits of implementing Machine Learning algorithms to automatically detect and adapt to MAC rotations. After thorough deliberation, I made a conscious decision not to pursue this particular problem. This determination stemmed from the realization that other facets of the project held greater significance, and diverting resources to address this issue would detract from those priorities. Instead, I chose to bolster the existing strategy by concentrating on consistently updating the database with known vendor MAC addresses and their corresponding device types. This proactive approach yielded positive results, ensuring steadfast and accurate device identification, even amidst MAC rotations.
+### Real-Time-Analysis
+Another Limitation that I ran into during development was the aspect of real-time data, initially the plan included real-time data analysis, however due to the time required for scanning or processing the network topology, real-time data became much harder to implement, due to this I decided, that it would be better to focus on the other aspects of the project and use timed intervals, much like other projects of this type, for example the Bridgton and Hove Bus app, which uses time intervals, to refresh the data, they use a time delay of 10s for a live map refresh, this allows time for the processing and provides the user with a relatively quick data refresh [23].
+
+Despite facing a multitude of challenges, I effectively implemented solutions to mitigate their impact, ensuring the seamless operation of my network management system. Through meticulous planning, strategic decision-making, and diligent execution, I navigated through complexities and upheld the integrity of the network infrastructure. This accomplishment serves as a testament to my unwavering dedication and proficiency in overcoming obstacles and delivering optimal results.
+### What does the project do vs initial plan for project
+Crowd Pulse is a solution designed to monitor the presence and density of users across a large scale area. Initially the idea was to use scanning techniques to discover the network topology and then develop the data into usable metrics for crowd detection and monitoring, however due to some of the limitations that where encountered, the Project changed into what it is now. The Crowd Pulse Project, has developed into a system that can accept the network topology as an input, or use scanning techniques to generate crowd density and monitoring values, this differs from the initial desired implementation as the system is unable to get the network topology itself, in the case the network topology is not provided the system will only be able to generate crowd a singular crowd density value for the entire area, and not individual areas, like the initial design, however when crowd pulse is given the network topology, the system is able to identify areas that are busier than others, and show this to a user.
+## Testing
+Due to the nature of the Crowd Pulse project, I decided it would be best to use a blend of synthetic and real-world data. In accordance with the laws and regulations mentioned earlier in this report, I only used the crowd pulse system on network's I had direct authorization to do so.
+
+Initially I tested the system a small home network, which did not accurately simulate the environment that the the project would be deployed in, i.e. large area networks that have high device counts. So to fix this I decided to use a python module named Faker,
+
+Faker is a Python package that generates fake data for you. Whether you need to bootstrap your database, create good-looking XML documents, fill-in your persistence to stress test it, or anonymize data taken from a production service [24]. I utilized faker to create synthetic data, I created data that simulated network topologies.
+
+I created a system that would allow the movement of devices between the different locations on a topology, I did this to simulate a more realistic environment, this showed that the crowd pulse project is capable of monitoring the network accurately.
+
+##### How was it tested?
+As stated before initially the project was tested on small home networks, that I had access to at the time. Due to the nature of the project, I decided that testing on small home networks was not the best way to test the project, as it was built for crowd monitoring on a larger scale.
+
+I thought of a different way to test the project, without access to a large scale network due to potential privacy and security issues. Synthetic data, this would allow me to create much larger data that I could use to test the system.
+
+Using the Faker library allowed me to simulate various network environments realistically, This synthetic data generation approach provided a controlled yet expansive testing environment without compromising actual user data. By generating data representative of real-world network behaviours, I could assess the project's performance, scalability, and accuracy under conditions akin to its intended deployment. This comprehensive testing approach helped identify and rectify issues early in the development cycle, ensuring a more robust and reliable final product.
+
+Below Are some of the Smaller Example network topologies that were used to Test Crowd Pulse.
+
+![[Pasted image 20240425093132.png]]
+![[Pasted image 20240425093224.png]]
+![[Pasted image 20240425093243.png]]
+![[Pasted image 20240425093317.png]]
+![[Pasted image 20240425093438.png]]
+## Evaluation
+### The Problem
+The challenge we're facing centres around the need for a more effective monitoring of crowd presence across university campuses. At Present there is no system that is used to monitor the crowd density within campus grounds. This is an oversight that became apparent during the COVID-19 pandemic, a system like the one described in this report would help in day-to-day operations and would become critical during significant events, such as campus fairs, open days, protests and would be useful during another pandemic / epidemic. 
+### The Solution
+The proposed solution is Crowd Pulse, a system that utilizes the pre-existing Wi-Fi infrastructure to monitor the approximate location of "user devices", this means that when connected to the Wi-Fi the device's approximate location is logged, for historical data analysis to show where the busiest areas on the campus are. Crowd Pulse Works by using the existing Wi-Fi Access Points that are scattered around the campus by logging the devices that are connected to these Wi-Fi Access points we can correlate the number of devices connected to the crowd density in that location.
+
+### Why This Matters
+The significance of this Problem and the solution was of incredible importance only a couple of years ago, when the COVID-19 pandemic struck the world. A system of this type would have allowed users to have a lower chance of infection by avoiding the areas that this system would have identified.
+
+Without a solution to this we are unable to identify the busiest locations of a campus, we are unable to locate areas where resources are not being used, and we are unable to locate potential crowd based security risks.
+
+With a solution to this we would be able to identify all of these things, and have the historical data to make informed decisions, such as re-allocating unused resources such as computers, staff, etc. to more used areas.
+
+
+### Why is this the best Solution 
+
+Crowd Pulse Stands as the best solution to this problem for the following Reasons:
+1. Crowd Pulse uses the pre-existing infrastructure
+2. It has multiple applications
+	- Locating busy areas and events
+	- Locating under used areas and resources
+	- Locating potential security risks
+3. It can be used on a day-to-day basis
+4. It it can easily be expanded on
+
+### Does It work as Intended?
+The answer to this question is more complex than you might think. Does Crowd Pulse Work as described by the Project Proposal, kind of, the project proposal stated the following #insert-reference-to-appendix:
+
+The primary objectives:
+1. develop a system for detecting using Wi-Fi or IoT
+2. Real-Time Data analysis
+3. Integration with existing university infrastructure
+4. User Interface
+
+The Current System, fulfils the first objective as the project utilizes the existing infrastructure.
+
+The second objective I deemed to be too expensive in time and resources, when developing, I decided that having historical data would suffice for users, I think that it would not be hard to estimate the real-time crowd density, based on the existing historical data.
+
+The third objective is more of a grey area, when I wrote the objective I wanted the system to be integrated into the university mobile app, so that anyone could access the information. However I was advised by my project supervisor that this would involve getting permissions and going through an extensive approval process. On the Other hand the system is integrated with the university infrastructure in the sense that the Wi-Fi infrastructure is used.
+
+The forth objective I did implement but I believe it could have been done better, website and User interface design has never been a strong point for me, however I decided that a simple UI would be better than no UI at all.
+#insert-img-reference 
+
+So the Answer Remains does it function as intended? yes, it may not have met all the original aims and objectives, but I can say that the crowd pulse is functional and works how I currently intend it to.
+#### How Well does it work?
+Crowd Pulse demonstrates it's effectiveness in addressing the identified problem by accurately monitoring crowd density and presence. Through the data collection and analysis
+#insert-img-reference [reference a plotly graph of areas that have high population]
+#insert-img-reference [reference the UI you implemented]

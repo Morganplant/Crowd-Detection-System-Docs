@@ -48,3 +48,5 @@ So the Answer Remains does it function as intended? yes, it may not have met all
 Crowd Pulse demonstrates it's effectiveness in addressing the identified problem by accurately monitoring crowd density and presence. Through the data collection and analysis
 #insert-img-reference [reference a plotly graph of areas that have high population]
 #insert-img-reference [reference the UI you implemented]
+
+![[Pasted image 20240425104706.png]]

@@ -8,6 +8,7 @@
 
 > [!example]- Example Network Topology map
 > ![[Pasted image 20240405132952.png]]
+> ![[Pasted image 20240425021551.png]]
 
 
 ( #insert-reference actual topology json mapping)

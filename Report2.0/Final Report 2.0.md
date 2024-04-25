@@ -590,7 +590,7 @@ Crowd Pulse Stands as the best solution to this problem for the following Reason
 4. It it can easily be expanded on
 
 ### Does It work as Intended?
-The answer to this question is more complex than you might think. Does Crowd Pulse Work as described by the Project Proposal, kind of, the project proposal stated the following #insert-reference-to-appendix:
+The answer to this question is more complex than you might think. Does Crowd Pulse Work as described by the Project Proposal, kind of, the project proposal stated the following:
 
 The primary objectives:
 1. develop a system for detecting using Wi-Fi or IoT
@@ -605,10 +605,162 @@ The second objective I deemed to be too expensive in time and resources, when de
 The third objective is more of a grey area, when I wrote the objective I wanted the system to be integrated into the university mobile app, so that anyone could access the information. However I was advised by my project supervisor that this would involve getting permissions and going through an extensive approval process. On the Other hand the system is integrated with the university infrastructure in the sense that the Wi-Fi infrastructure is used.
 
 The forth objective I did implement but I believe it could have been done better, website and User interface design has never been a strong point for me, however I decided that a simple UI would be better than no UI at all.
-#insert-img-reference 
 
 So the Answer Remains does it function as intended? yes, it may not have met all the original aims and objectives, but I can say that the crowd pulse is functional and works how I currently intend it to.
 #### How Well does it work?
 Crowd Pulse demonstrates it's effectiveness in addressing the identified problem by accurately monitoring crowd density and presence. Through the data collection and analysis
-#insert-img-reference [reference a plotly graph of areas that have high population]
-#insert-img-reference [reference the UI you implemented]
+
+Below is a graph showing the Crowd Density Values for the topology below it, it is just one instance in time and does not show the historical data but does show locations that are the busiest, as shown by the red coloration.
+![[Pasted image 20240425121117.png]]
+![[Pasted image 20240425121518.png]]
+## Conclusion
+
+Throughout this report, we have talked about the core challenges faced by university environments, the limitations of the project and how Crowd Pulse offers solutions to the following:
+1. Crowd Monitoring
+2. Effective Resource Allocation
+3. Security and Campus Safety
+In conclusion, the Crowd Pulse project stands as a solution to address the need for effective crowd monitoring across a university campus. 
+### Project Impact
+Through planning, and strategic decision-making, and execution, Crowd Pulse offers a solution that addresses critical issues faced by university campuses worldwide. By providing insights into crowd density, optimizing resource allocation, and enhancing safety measures, Crowd Pulse can empowered campus administrators and staff to make informed decisions and improve overall campus operations.
+
+### Final Thoughts and Considerations:
+
+As we conclude this report on the Crowd Pulse project, it's important to consider the larger implications and potential future directions of this project. Beyond university campuses, Crowd Pulse has the potential to transform crowd management strategies in various contexts, ranging from public events to commercial spaces.
+
+Despite the achievements of the Crowd Pulse project, there are still areas that could be developed and enhanced further. With additional time and resources, the following project extensions could be pursued:
+1. **Incorporating Machine Learning for Mac Address Swapping:** Addressing the challenge of MAC address swapping through machine learning algorithms could significantly enhance the accuracy and reliability of the Crowd Pulse scanning system. By training models to detect and adapt to MAC address rotations, we could improve device identification and provide more precise crowd monitoring data.
+2. **Creating a Better User Interface (UI):** While the current UI serves its purpose, there is room for improvement in terms of user experience and aesthetics. Investing in the development of a more intuitive and visually appealing UI could enhance user engagement and satisfaction, making the Crowd Pulse system more accessible and user-friendly for a wider audience.
+3. **Exploring Real-Time Data Analysis:** Although the decision was made to prioritize historical data analysis over real-time data processing, there is potential for incorporating real-time monitoring capabilities. By leveraging advanced data processing techniques, further enhancing the system's effectiveness and responsiveness.
+4. **Enhancing Integration with Existing University Infrastructure:** While Crowd Pulse currently utilizes existing Wi-Fi infrastructure for crowd monitoring, there is an opportunity to deepen integration with other university systems and platforms. This could involve collaborating with IT departments to streamline data sharing and integration processes, ultimately creating a more seamless and interconnected campus ecosystem.
+
+  
+In conclusion, the Crowd Pulse project represents a significant step forward in addressing the challenges of crowd monitoring, resource allocation, and campus safety within university environments. By leveraging existing Wi-Fi infrastructure and innovative data analysis techniques, Crowd Pulse offers a powerful solution for enhancing situational awareness, optimizing resource utilization, and proactively managing security risks. While the project has achieved notable success in its current iteration, there remains ample potential for future development and refinement.
+
+## Bibliography
+[1] Github, “About Projects - GitHub Docs,” _GitHub Docs_, 2024. https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects (accessed Apr. 24, 2024).
+
+[2] Smart Projects, “A Brief History of SMART Goals,” Project Smart, Dec. 13, 2014. https://www.projectsmart.co.uk/smart-goals/brief-history-of-smart-goals.php (accessed Apr. 24, 2024).
+
+[3] Schnell, “Advantages and Disadvantages of Agile Methodology: Pros and Cons,” _Schnell Solutions_, Aug. 13, 2022. https://www.bespokesoftwaredevelopment.com/blog/agile-project-management-methodology-advantages-disadvantages/ (accessed Apr. 24, 2024).
+
+[4] Adobe Communications Team, “Waterfall Methodology: Project Management | Adobe Workfront,” _Adobe.com_, 2022. https://business.adobe.com/blog/basics/waterfall#:~:text=The%20Waterfall%20methodology%20%E2%80%94%20also%20known,before%20the%20next%20phase%20begins. (accessed Apr. 24, 2024).
+[5] “Development of a new sensor system to increase passenger safety on railway platforms | ALTPRO,” _ALTPRO_, Sep. 25, 2022. https://altpro.com/2022/09/26/development-of-a-new-sensor-system-to-increase-passenger-safety-on-railway-platforms/ (accessed Apr. 05, 2024).
+
+[6] Apple, “Wi-Fi privacy,” _Apple Support_, 2017. https://support.apple.com/en-gb/guide/security/secb9cb3140c/web (accessed Apr. 24, 2024).
+
+[7] TallyFi, “People Counters for Nightclubs by TallyFi - Support,” _Tallyfi.com_, 2018. https://www.tallyfi.com/support/manual (accessed Apr. 04, 2024).
+[8] Crowd Connected, “People Tracking,” _CrowdConnected People-Tracking_, 2022. https://www.crowdconnected.com/solutions/people-tracking/ (accessed Apr. 04, 2024).
+
+[9] Pointr, “Pointr - Deep Location® Company | Indoor Maps, Positioning & More,” _Pointr.tech_, 2024. https://www.pointr.tech/ (accessed Apr. 04, 2024).
+
+[10] C. Preusler, “Sightcorp Delivers Computer Vision Technology for Real-Time Face Analysis Hosted at the Edge,” _HostingAdvice.com_, Sep. 22, 2020. https://www.hostingadvice.com/blog/sightcorp-delivers-real-time-face-analysis/ (accessed Apr. 05, 2024).
+[11] S. Nair, “Thales introduces real-time crowd management solution for railway stations,” _Railway Technology_, Mar. 23, 2021. https://www.railway-technology.com/news/thales-real-time-crowd-management/?cf-view (accessed Apr. 05, 2024).
+
+[12] Professional Engineering, “Lidar and AI to monitor crowds at Bristol train station,” _Imeche.org_, 2023. https://www.imeche.org/news/news-article/lidar-and-ai-to-monitor-crowds-at-bristol-train-station (accessed Apr. 05, 2024).
+
+[13] Intersoft Coonsulting, “General Data Protection Regulation (GDPR) – Final text neatly arranged,” _General Data Protection Regulation (GDPR)_, Apr. 22, 2024. https://gdpr-info.eu/ (accessed Apr. 24, 2024).
+
+[14] Government Digital Service, “Data protection,” _GOV.UK_, Nov. 15, 2011. https://www.gov.uk/data-protection#:~:text=The%20Data%20Protection%20Act%202018%20is%20the%20UK's%20implementation%20of,used%20fairly%2C%20lawfully%20and%20transparently (accessed Apr. 24, 2024).
+
+[15] Information Commissioner's Office, “For organisations,” _Ico.org.uk_, Feb. 21, 2024. https://ico.org.uk/for-organisations/ (accessed Apr. 24, 2024).
+
+[16] BCS, “BCS, THE CHARTERED INSTITUTE FOR IT CODE OF CONDUCT FOR BCS MEMBERS,” Jun. 2022. Available: https://www.bcs.org/media/2211/bcs-code-of-conduct.pdf
+
+[17] Oracle, “Access Cloud Services for Free,” _Oracle.com_, 2024. https://www.oracle.com/uk/cloud/free/ (accessed Apr. 25, 2024).
+
+[18] Google, “Google Drive,” _Google.com_, 2024. https://drive.google.com (accessed Apr. 25, 2024).
+
+[19] Teamgantt, “TeamGantt FAQs,” _Teamgantt.com_, 2023. https://www.teamgantt.com/ (accessed Apr. 25, 2024).
+
+[20] Gitea, “Gitea Official Website,” _Gitea.com_, 2024. https://about.gitea.com/ (accessed Apr. 25, 2024).
+
+[21] Nmap, “Nmap: the Network Mapper - Free Security Scanner,” _Nmap.org_, 2017. https://nmap.org/ (accessed Apr. 25, 2024).
+
+[22] Cisco , “Cisco DNA Center User Guide, Release 2.3.5 - Display Your Network Topology [Cisco Catalyst Center],” _Cisco_, Feb. 2024. https://www.cisco.com/c/en/us/td/docs/cloud-systems-management/network-automation-and-management/dna-center/2-3-5/user_guide/b_cisco_dna_center_ug_2_3_5/b_cisco_dna_center_ug_2_3_5_chapter_0101.html (accessed Apr. 25, 2024).
+
+[23] Brighton & Hove Buses, “Brighton & Hove Buses App,” _Buses.co.uk_, 2021. https://www.buses.co.uk/app (accessed Apr. 25, 2024).
+
+[24] D. Faraglia, “joke2k/faker: Faker is a Python package that generates fake data for you.,” _GitHub_, Apr. 17, 2024. https://github.com/joke2k/faker (accessed Apr. 25, 2024).
+## Appendices
+
+### Appendix A: Project Proposal
+By Morgan Plant
+#### **Project Summary**
+The aim of this project is to design and develop a University Crowd Detection System for monitoring the presence and density of users in different areas of the university. This system will have the flexibility to utilize either Wi-Fi technology or IoT devices to collect user data. In addition, we will create a user-friendly interface, either a web application or a mobile application, to visualize and interact with real-time data on a map of the campus.
+##### Project Objective
+- The primary objective of this project is to identify high crowd density locations on campus
+##### Example Usage
+- The project could be used during a pandemic / epidemic, to view the areas with the most people, this can be useful to a user as they can then avoid certain areas, to decrease the risk of infection.
+- The project could be used to indicate whether a room / area is full and, which would save time on the part of the user
+- This project could be used to help manage protests and other similar events
+###### Aims
+1. To create a University Crowd Detection System capable of monitoring and analysing crowed presence and density in university locations.
+2. To optimize resource allocation and space utilization across the university.
+3. To design and develop a user interface for visualizing real-time user data on a map of the campus.
+4. To integrate this new resource with the existing infrastructure of the University
+##### Objectives
+###### **Primary Objectives**
+1. **Design and Development**: Develop a flexible and scalable system for user detection using either Wi-Fi technology or IoT devices.
+2. **Real-time Data**: Implement real-time data collection and analysis to provide immediate insights.
+3. **Integration**: Ensure seamless integration with existing security and resource management infrastructure on campus.
+4. **User Interface**: Design and develop a user-friendly interface (web or mobile application) for visualizing real-time user data on a map of the campus.
+###### **Secondary Objectives**
+1. **Scalability**: Ensure that the system can be easily expanded to cover various campus locations.
+2. **Data Visualization**: Create interactive map-based visualizations for better understanding of user data.
+3. **Historical Data**: Store historical data for trend analysis and decision-making.
+4. **Resource Optimization**: Provide recommendations for resource allocation based on user data.
+##### **Project Relevance**
+This Project aims to address proper resource allocation, by allowing users to view the areas on campus, such as the library, university shop, etc. that are busy, or help manage crowd control during events, and provide useful data about said events, this project could also contribute to insights for space utilization, safety and security measures, which would make it a valuable tool for campus management. This relates to the degree I am studying for **Computer Science** because this project is centred on aspects of my studies such as, Human-Computer Interaction for creating the interface for users to check, Computer-Security, due to the nature of privacy featured in this project, Computer-Networks as this project will feature either a web-based interface or usage of Wi-Fi Systems to detect users. as well as Data Analysis aspects.
+
+This project will test the skills I have learned in my studied modules, for instance this will test my Software Engineering capabilities, throughout the entire process, the GUI, web-based or not will test my Human-Computer Interaction skills, as the project is related to crowd density, this will involve data analytical skills, as well as Networking skills. as well as professional writing skills
+##### **Resources Required**
+1. Hardware:
+   1. **Detection Devices**: Depending on the chosen technology (Wi-Fi or IoT), I'll need the necessary hardware, such access to Wi-Fi access points or IoT sensors. These devices will be responsible for collecting user data.
+   2. **Dedicated Device**: To process and store data
+2. Software:
+   1. **Development Tools**: Software development tools, including integrated development environments (IDEs), programming languages, and development frameworks for creating the system.
+   2. **Data Analysis Software**: Tools for real-time data analysis, data visualization, and data storage.
+   3. **User Interface Development Tools**: Software for designing and developing the user-friendly interface, whether it's a web application or a mobile application.
+3. Permissions
+   1. Obtain the necessary approvals and permissions for installing monitoring equipment on the university campus. This may involve collaboration with university administrators and compliance with data privacy regulations.
+##### **Expected Outcomes**
+Upon completion of this project, I anticipate the following outcomes:
+1. A functional University Crowd Detection System capable of utilizing either Wi-Fi or IoT technology or both.
+2. Real-time user presence data.
+3. Enhanced resource management and space utilization.
+4. An intuitive and interactive user interface for viewing real-time user data featuring a map.
+##### **Similar Projects**
+- IETE Technical Review. (2021). _Crowd Monitoring: State-of-the-Art and Future Directions_. [online] Available at: https://www.tandfonline.com/doi/abs/10.1080/02564602.2020.1803152 [Accessed 15 Oct. 2023].
+- Li, X. (2022). Crowd monitoring and detection. _Ntu.edu.sg_. [online] doi:https://hdl.handle.net/10356/158434.
+- Mu, M. (2020). _WiFi-based Crowd Monitoring and Workspace Planning for COVID-19 Recovery_. [online] arXiv.org. Available at: https://arxiv.org/abs/2007.12250 [Accessed 15 Oct. 2023].
+##### **Conclusion**
+The "University Crowd Detection System" project aims to create a modern and effective solution for monitoring user presence on university campuses while providing a user-friendly interface for visualizing real-time user data on a campus map. It will contribute to the safety and security of students and staff while optimizing resource allocation.
+### Appendix B Project Logs
+#### B.1 Supervisor Log
+1. 2023-10-24
+2. 2023-10-31
+3. 2023-11-07
+4. 2023-11-28
+5. 2024-02-20
+6. 2024-03-05
+7. 2024-03-15
+8. 2024-04-20
+#### B.2 Weekly Log
+1. 2024-01-25
+2. 2024-02-31
+3. 2024-02-09
+4. 2024-02-16
+5. 2024-02-28
+6. 2024-03-06
+7. 2024-03-15
+8. 2024-03-20
+9. 2024-03-27
+10. 2024-04-03
+11. 2024-04-17
+12. 2024-04-24
+
+
+
+
+
+

@@ -24,7 +24,7 @@ Crowd Pulse Stands as the best solution to this problem for the following Reason
 4. It it can easily be expanded on
 
 ### Does It work as Intended?
-The answer to this question is more complex than you might think. Does Crowd Pulse Work as described by the Project Proposal, kind of, the project proposal stated the following #insert-reference-to-appendix:
+The answer to this question is more complex than you might think. Does Crowd Pulse Work as described by the Project Proposal, kind of, the project proposal stated the following:
 
 The primary objectives:
 1. develop a system for detecting using Wi-Fi or IoT
@@ -46,7 +46,7 @@ The forth objective I did implement but I believe it could have been done better
 So the Answer Remains does it function as intended? yes, it may not have met all the original aims and objectives, but I can say that the crowd pulse is functional and works how I currently intend it to.
 #### How Well does it work?
 Crowd Pulse demonstrates it's effectiveness in addressing the identified problem by accurately monitoring crowd density and presence. Through the data collection and analysis
-#insert-img-reference [reference a plotly graph of areas that have high population]
-#insert-img-reference [reference the UI you implemented]
 
-![[Pasted image 20240425104706.png]]
+Below is a graph showing the Crowd Density Values for the topology below it, it is just one instance in time and does not show the historical data but does show locations that are the busiest, as shown by the red coloration.
+![[Pasted image 20240425121117.png]]
+![[Pasted image 20240425121518.png]]

@@ -7,9 +7,10 @@ report should not include a full listing of code (but can have some snippets)
 
 ### Should contain
 
-A cover Sheet
+Cover Sheet
 - Title
 - Supervisor
+- Department
 - Candidate number
 Statement of originality
 Summary (one page abstract / half page)

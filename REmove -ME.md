@@ -52,10 +52,28 @@ Get Sophie To read the report
 - Demo
 - (do not demo setup!)
 
-- will be cutoff at 20mins regardless
+- will be cut-off at 20mins regardless
 
 
-- TURN UP! (lose marks if you dont)
+- TURN UP! (lose marks if you don't)
 - quiet place with good internet connection
 
 Almost Certain Question how to export the network topology
+
+```email
+Hi Morgan,
+
+I've had a chance to look over your draft report. Here's some feedback:
+
+You will need to add a cover sheet with a title page, table of contents, and statement of originality to the report.
+
+Pay attention to general grammar and punctuation throughout the report as I spotted a few areas with unusual capitalization to ensure clarity and correctness.
+
+Make sure the objectives alignment with the project's outcomes and that each objective is clearly defined.
+
+Finally I'd advise that you get others to read your report
+
+Overall, your report is comprehensive and detailed. Adding these elements will make it more professional.
+
+Best regards, Ian
+```
